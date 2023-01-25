@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <script src="myScript.js"></script>
+
+    <div id="mainContainer">
+        
+        <div id="messageBoxContainer" class="messageBoxContainer">
+            <div class="messageContainer">
+              <span class="close">&times;</span>
+            </div>
+          </div>
+
+        <div class="boxes">
+            <div class="diskContainer" id="firstBox"></div>
+            <div class="boxNumber"><p class="p1">1</p></div>
+            <div class="buttons">
+                <button class="button" id="moveButtons" onclick="moveDisk(1, 2)">1->2</button>
+            </div>
+            <div class="buttons">
+                <button class="button" id="moveButtons" onclick="moveDisk(1, 3)">1->3</button>
+            </div>
+        </div>
+
+
+        <div class="boxes">
+            <div class="diskContainer"></div>
+            <div class="boxNumber">
+                <p class="p1">2</p>
+            </div>
+
+            <div class="buttons">
+                <button class="button" id="moveButtons" onclick="moveDisk(2, 1)">2->1</button>
+            </div>
+
+            <div class="buttons">
+                <button class="button" id="moveButtons" onclick="moveDisk(2, 3)">2->3</button>
+            </div>
+        </div>
+
+
+        <div class="boxes">
+            <div class="diskContainer"></div>
+            <div class="boxNumber">
+                <p class="p1">3</p>
+            </div>
+
+            <div class="buttons">
+                <button class="button" id="moveButtons" onclick="moveDisk(3, 1)">3->1</button>
+            </div>
+            <div class="buttons">
+                <button class="button" id="moveButtons" onclick="moveDisk(3, 2)">3->2</button>
+            </div>
+        </div>
+     
+        <div class="clearBoth"></div>
+
+        <div class="gameOption">
+            <div class="buttonsLower">
+                <button class="button" id="c2" onclick="start()">Start New Game</button>
+            </div>
+            <div class="buttonsLower">
+                <button class="button " id="c2" onclick="evaluateGame()">Submit Result</button>
+            </div>
+        </div>  
+
+     </div>
+</body>
